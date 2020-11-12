@@ -76,6 +76,8 @@ class Recipie(Frame):
         self.fix()
 
     def _download_image(self, image_url):
+        if not os.path.exists('img'):
+            os.makedirs('img')
         image_name = ''.join(random.choice(string.ascii_letters) for x in range(10))
         r = requests.get(image_url, stream=True)
         if r.status_code == 200:
