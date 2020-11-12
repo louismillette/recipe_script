@@ -1,3 +1,11 @@
+'''
+    File name: PickRecipies.py
+    Author: Louis Millette
+    Date created: 11/08/2020
+    Date last modified: 11/12/2020
+    Python Version: 3.6
+'''
+
 from __future__ import division
 from builtins import range
 import copy

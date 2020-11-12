@@ -1,3 +1,11 @@
+'''
+    File name: InputIngrediants.py
+    Author: Louis Millette
+    Date created: 11/08/2020
+    Date last modified: 11/12/2020
+    Python Version: 3.6
+'''
+
 from __future__ import division
 from builtins import range
 import copy
@@ -73,7 +81,7 @@ class InputIngredients(Frame):
 
     def _continue(self):
         # self.screen.ingrediants = self.screen.food.read_ingredients(self.screen.ingrediants)
-        self.screen.recipes = self.screen.food.search_recipes_online(self.screen.ingrediants, self.screen.use_pantry)
+        self.screen.recipes = self.screen.food.search_recipes_online(self.screen.ingrediants, self.screen.use_pantry, self.number_of_recipies)
         last_scene = self.screen._scenes[-1]
         self.screen._scenes = self.screen._scenes[:-1]
         self.screen._scenes += create_recipie_frames(self.screen)

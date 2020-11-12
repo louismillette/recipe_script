@@ -1,4 +1,10 @@
-#!/usr/bin/env python3
+'''
+    File name: main.py
+    Author: Louis Millette
+    Date created: 11/06/2020
+    Date last modified: 11/12/2020
+    Python Version: 3.6
+'''
 
 from asciimatics.scene import Scene
 from asciimatics.screen import Screen
@@ -13,8 +19,6 @@ from Display.ShoppingList import ShoppingList
 import json
 
 def play(screen):
-    with open('groccery_list.txt', 'w') as write_file:
-        write_file.write(json.dumps([]))
     scenes = []
     screen.ingrediants = []
     screen.use_pantry = True
