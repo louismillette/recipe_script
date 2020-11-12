@@ -59,7 +59,7 @@ pip install -r requirements.txt
 python tests.py
 ```
 
-2. Run the main script
+2. Run the main script inside your console.  It runs best on Linux based operating systems (windows cmd has a limited color palette).  For the best performance, run it in full screen on a 1080 resolution screen, or half screen on a 4k resolution screen.
 ```sh
 python main.py
 ```
