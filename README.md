@@ -45,8 +45,6 @@ git clone https://github.com/louismillette/recipe_script.git
 virtualenv virt
 ```
 4. Activate the virtualenv inside your console.
-	- Go into the virtualenv, Scripts directory
-	- Drag the 'Activate' file that matches your operating system into your open terminal
 5. Install the requirements from the main project directory
 ```sh
 pip install -r requirements.txt
