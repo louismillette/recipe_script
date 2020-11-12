@@ -96,20 +96,11 @@ class Recipie(Frame):
     def _add(self):
         self._delete_picture()
         self.screen.shopping_list += self.screen.food.add_prices_to_missed_ingredients(self.missed_ingredients, self.recipie_id)
-        self._update_grocery_list(self.missed_ingredients)
         raise NextScene()
 
     def _dont_add(self):
         self._delete_picture()
         raise NextScene()
-
-    def _update_grocery_list(self, new_list_items):
-        with open('groccery_list.txt', 'r') as read_file:
-            line = read_file.readline()
-            list = json.loads(line)
-        list += new_list_items
-        with open('groccery_list.txt', 'w') as write_file:
-            write_file.write(json.dumps(list))
 
     def _delete_picture(self):
         os.remove(self.image_name)
